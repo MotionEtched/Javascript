@@ -57,3 +57,14 @@ function reverseString(str) {  //declares a function named reverseString
 console.log(reverseString("hello"));  //calls the function with "hello"...prints the result of the function
 
 
+//Question 7. create username
+function createUsername(firstName, lastName = "User") {  //declares a function with firstName and optional lastName defaulting to "User"
+  return (firstName + "_" + lastName).toLowerCase();  //combines names with _ and converts to lowercase
+}
+
+console.log(createUsername("John", "Smith")); // John_smith ...calls the function with both names, prints
+console.log(createUsername("John"));          // John_user... calls function with only first name, prints "ana_user"
+
+
+
+
