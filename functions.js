@@ -77,3 +77,13 @@ function multiply(x, y) { return x * y; }   //defines a function to multiply two
 console.log(applyOperation(5, 3, add));       // calls applyOperation with add, prints 8
 console.log(applyOperation(5, 3, multiply));  // calls applyOperation with multiply, prints 15
 
+
+//Question 9. filter adults
+function filterAdults(ages) {  //declares a function that takes an array of ages
+  return ages.filter(age => age >= 18);   //uses filter() with an arrow function to keep only ages ≥ 18
+}
+
+console.log(filterAdults([12, 17, 18, 21, 15]));   //calls the function and prints [18, 21]
+
+
+
