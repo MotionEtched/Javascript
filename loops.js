@@ -85,3 +85,15 @@ while (num > 0) {  //loops runs as long as the number is greater than 0
 }
 
 console.log("Number of digits = " + count);  //prints the total number of digits
+
+
+//Question 4. print the first N Fibonacci numbers
+let n = 7;  //stores how many numbers to print
+let a = 0, b = 1;  //a= first fibonacci number , b=second fibonacci number
+
+for (let i = 1; i <= n; i++) {  //loop runs n times
+  console.log(a);  //prints the current fibonacci number
+  let next = a + b;  //adds the previous two number
+  a = b;  //moves forward
+  b = next;
+}
