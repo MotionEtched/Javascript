@@ -97,3 +97,16 @@ for (let i = 1; i <= n; i++) {  //loop runs n times
   a = b;  //moves forward
   b = next;
 }
+
+
+//Question 5. nested loop to print star pattern
+for (let i = 1; i <= 5; i++) {  //controls the number of rows..runs 5 times and prints 5 lines
+
+  let row = "";   //creates an empty string for each row
+
+  for (let j = 1; j <= 5; j++) {   //controls the number of columns
+    row += "*";   //adds one star in each inner loop iteration
+  }
+
+  console.log(row);  //prints the completed row
+}
