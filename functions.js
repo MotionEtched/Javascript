@@ -4,3 +4,11 @@ function greetUser(name) {  //declares a function with parameter name
 }
 
 console.log(greetUser("John"));  //prints the name
+
+
+//Question 2. calculate area that takes length and width of a rectangle
+function calculateArea(length, width) {  //formula for rectangle area, lenght and width are functions
+  return length * width;  //sends the results...
+} 
+
+console.log(calculateArea(5, 8));
