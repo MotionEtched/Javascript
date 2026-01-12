@@ -31,5 +31,19 @@ function celsiusToFahrenheit(celsius) {  //function
 console.log(celsiusToFahrenheit(25));  //prints the output
 
 
+//Question 5. find max
+function findMax(arr) {  //declares a function names arr
+  let max = arr[0];  //creates a variable max to keep track of the largest number found so far
+  for (let i = 1; i < arr.length; i++) {  //starts a for loop to go through the array from the second element (i = 1) to the last element
+    if (arr[i] > max) {   //checks if the current element (arr[i]) is greater than the current max
+      max = arr[i];  //updates max to the new largest number found
+    }
+  }
+  return max; //returns the largest number found in the array
+}
+
+console.log(findMax([3, 7, 2, 9, 1]));  //calls the findMax function with the array [3, 7, 2, 9, 1]....and prints the returned largest number
+
+
 
 
