@@ -45,5 +45,15 @@ function findMax(arr) {  //declares a function names arr
 console.log(findMax([3, 7, 2, 9, 1]));  //calls the findMax function with the array [3, 7, 2, 9, 1]....and prints the returned largest number
 
 
+//Question 6. reverse string
+function reverseString(str) {  //declares a function named reverseString
+  let reversed = "";  //creates an empty string reversed to store the reversed string as we build it
+  for (let i = str.length - 1; i >= 0; i--) {  //loop starts from the last character of the string: str.length - 1
+    reversed += str[i];  //adds the current character (str[i]) to the reversed string
+  }
+  return reversed;  //returns the reversed string
+}
+
+console.log(reverseString("hello"));  //calls the function with "hello"...prints the result of the function
 
 
