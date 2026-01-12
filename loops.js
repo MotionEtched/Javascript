@@ -110,3 +110,14 @@ for (let i = 1; i <= 5; i++) {  //controls the number of rows..runs 5 times and 
 
   console.log(row);  //prints the completed row
 }
+
+
+//Question 6. print stars pattern
+for (let i=1; i<=5; i++) {
+    let stars = "";
+
+    for (let j=1; j<=i; j++) {
+        stars += "*";
+    }
+    console.log (stars);
+}
