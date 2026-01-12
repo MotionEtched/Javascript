@@ -97,3 +97,13 @@ function calculateGrade(score) {   //declares a function that takes a numeric sc
 
 console.log(calculateGrade(85)); // calls the function and prints "B"
 
+
+//Question 11. palindrome
+function isPalindrome(str) {   //Declares a function that takes a string as input.
+  let cleanStr = str.replace(/\s+/g, '').toLowerCase();   //removes spaces and converts the string to lowercase
+  let reversed = cleanStr.split('').reverse().join('');   //splits the string into characters, reverses them, and joins back into a string
+  return cleanStr === reversed;  //compares the cleaned string with the reversed string and returns true or false
+}
+
+console.log(isPalindrome("Madam"));          // calls the function, prints true
+console.log(isPalindrome("Hello World"));    // calls the function, prints false
