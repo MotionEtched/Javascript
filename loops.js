@@ -73,3 +73,15 @@ while (num > 0) {   //the loop runs until all digits are processed..each loops r
 }
 
 console.log("Reversed number is " + reverse);  //prints the reversed number
+
+
+//Question 3. count how many digits are in a number
+let num = 12345;  //stores the number
+let count = 0;  //stores the total number of digit
+
+while (num > 0) {  //loops runs as long as the number is greater than 0
+  count++;  //increases the digit count by 1
+  num = Math.floor(num / 10);   //removes the last digit of the number
+}
+
+console.log("Number of digits = " + count);  //prints the total number of digits
