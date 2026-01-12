@@ -1,0 +1,109 @@
+//Question 1. Write a function that takes a name and returns a greeting.
+function greetUser(name) {  //declares a function with parameter name
+  return "Hello, " + name + "! Welcome to JavaScript."; //sends the message back .."name" calls the function .."+" combines strings and variable
+}
+
+console.log(greetUser("John"));  //prints the name
+
+
+//Question 2. calculate area that takes length and width of a rectangle
+function calculateArea(length, width) {  //formula for rectangle area, lenght and width are functions
+  return length * width;  //sends the results...
+} 
+
+console.log(calculateArea(5, 8));
+
+
+//Question 3. check if a number is even
+function isEven(number) {  //% operator → gives remainder
+  return number % 2 === 0;  //number % 2 === 0 → true if divisible by 2.."return" sends the boolean value
+}
+
+console.log(isEven(6)); // true
+console.log(isEven(7)); // false
+
+
+//Question 4. celsius To Fahrenheit
+function celsiusToFahrenheit(celsius) {  //function
+  return (celsius * 9/5) + 32;  //formul;a..."return" sends the converted temperature
+}
+
+console.log(celsiusToFahrenheit(25));  //prints the output
+
+
+//Question 5. find max
+function findMax(arr) {  //declares a function names arr
+  let max = arr[0];  //creates a variable max to keep track of the largest number found so far
+  for (let i = 1; i < arr.length; i++) {  //starts a for loop to go through the array from the second element (i = 1) to the last element
+    if (arr[i] > max) {   //checks if the current element (arr[i]) is greater than the current max
+      max = arr[i];  //updates max to the new largest number found
+    }
+  }
+  return max; //returns the largest number found in the array
+}
+
+console.log(findMax([3, 7, 2, 9, 1]));  //calls the findMax function with the array [3, 7, 2, 9, 1]....and prints the returned largest number
+
+
+//Question 6. reverse string
+function reverseString(str) {  //declares a function named reverseString
+  let reversed = "";  //creates an empty string reversed to store the reversed string as we build it
+  for (let i = str.length - 1; i >= 0; i--) {  //loop starts from the last character of the string: str.length - 1
+    reversed += str[i];  //adds the current character (str[i]) to the reversed string
+  }
+  return reversed;  //returns the reversed string
+}
+
+console.log(reverseString("hello"));  //calls the function with "hello"...prints the result of the function
+
+
+//Question 7. create username
+function createUsername(firstName, lastName = "User") {  //declares a function with firstName and optional lastName defaulting to "User"
+  return (firstName + "_" + lastName).toLowerCase();  //combines names with _ and converts to lowercase
+}
+
+console.log(createUsername("John", "Smith")); // John_smith ...calls the function with both names, prints
+console.log(createUsername("John"));          // John_user... calls function with only first name, prints "ana_user"
+
+
+//Question 8. apply operation
+function applyOperation(a, b, operation) {   //declares a function taking two numbers and a callback function
+  return operation(a, b);   //executes the callback operation with a and b and returns the result
+}
+
+function add(x, y) { return x + y; }   //defines a function to add two numbers
+function multiply(x, y) { return x * y; }   //defines a function to multiply two numbers
+
+console.log(applyOperation(5, 3, add));       // calls applyOperation with add, prints 8
+console.log(applyOperation(5, 3, multiply));  // calls applyOperation with multiply, prints 15
+
+
+//Question 9. filter adults
+function filterAdults(ages) {  //declares a function that takes an array of ages
+  return ages.filter(age => age >= 18);   //uses filter() with an arrow function to keep only ages ≥ 18
+}
+
+console.log(filterAdults([12, 17, 18, 21, 15]));   //calls the function and prints [18, 21]
+
+
+//Question 10. calculate grade
+function calculateGrade(score) {   //declares a function that takes a numeric score
+  if (score >= 90) return "A";   //returns "A" if score is 90 or above
+  else if (score >= 80) return "B";   //returns "B" if score is between 80–89
+  else if (score >= 70) return "C";   //returns "C" if score is between 70–79
+  else if (score >= 60) return "D";   //returns "D" if score is between 60–69
+  else return "F";   //returns "F" if score is below 60
+}
+
+console.log(calculateGrade(85)); // calls the function and prints "B"
+
+
+//Question 11. palindrome
+function isPalindrome(str) {   //Declares a function that takes a string as input.
+  let cleanStr = str.replace(/\s+/g, '').toLowerCase();   //removes spaces and converts the string to lowercase
+  let reversed = cleanStr.split('').reverse().join('');   //splits the string into characters, reverses them, and joins back into a string
+  return cleanStr === reversed;  //compares the cleaned string with the reversed string and returns true or false
+}
+
+console.log(isPalindrome("Madam"));          // calls the function, prints true
+console.log(isPalindrome("Hello World"));    // calls the function, prints false
