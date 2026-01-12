@@ -1,0 +1,62 @@
+
+//print 1-10
+for (let i = 1; i<=10; i++){
+    console.log(i);
+}
+
+
+//print even numbers
+for (let i = 1; i<=20; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+    
+}
+
+
+//sum of first 10 natural numbers
+
+let sum  = 0;
+
+for (let i = 1; i <= 10; i++){
+    sum += i;
+}
+console.log(sum);
+
+
+//table of 6
+for (let i = 10; i>=1; i--){
+    console.log("print", i);
+}
+
+for (let i=1; i<=10; i++){
+    console.log (`6 x ${i} = ${6 * i}`);
+}
+
+
+//print stars pattern
+for (let i=1; i<=5; i++) {
+    let stars = "";
+
+    for (let j=1; j<=i; j++) {
+        stars += "*";
+    }
+    console.log (stars);
+}
+
+
+//Question 1. To check whether the number is prime or not
+let num = 7;          //stores the number to be checked
+let count = 0;          //tracks the factor of the number
+
+for (let i = 1; i <= num; i++) {          //loop runs from 1
+  if (num % i === 0) {          //% checks remainder.. if remainder is 0 then..i is a factor
+    count++;          //increases factor count whenever divisor is found
+  }
+}
+
+if (count === 2) {          //exactly 2 factor then the number is prime....more or fewer is not prime
+  console.log(num + " is a prime number");
+} else {
+  console.log(num + " is not a prime number");
+}
