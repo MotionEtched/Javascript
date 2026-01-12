@@ -16,11 +16,19 @@ console.log(calculateArea(5, 8));
 
 //Question 3. check if a number is even
 function isEven(number) {  //% operator → gives remainder
-  return number % 2 === 0;  //number % 2 === 0 → true if divisible by 2
+  return number % 2 === 0;  //number % 2 === 0 → true if divisible by 2.."return" sends the boolean value
 }
 
 console.log(isEven(6)); // true
 console.log(isEven(7)); // false
+
+
+//Question 4. celsius To Fahrenheit
+function celsiusToFahrenheit(celsius) {  //function
+  return (celsius * 9/5) + 32;  //formul;a..."return" sends the converted temperature
+}
+
+console.log(celsiusToFahrenheit(25));  //prints the output
 
 
 
