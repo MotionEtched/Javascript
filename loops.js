@@ -60,3 +60,16 @@ if (count === 2) {          //exactly 2 factor then the number is prime....more 
 } else {
   console.log(num + " is not a prime number");
 }
+
+
+//Question 2. take a number and reverse it
+let num = 1234;  //stores the number to be checked
+let reverse = 0;  //stores the reversed number...starts from 0..
+
+while (num > 0) {   //the loop runs until all digits are processed..each loops removes one digit from num..
+  let digit = num % 10;  //%10 extracts the last digit of the number
+  reverse = reverse * 10 + digit;  //shifts existing digits left... and adds the new digit at the end
+  num = Math.floor(num / 10);  //removes the last digit from the number.. (Math.floor) removes decimals
+}
+
+console.log("Reversed number is " + reverse);  //prints the reversed number
