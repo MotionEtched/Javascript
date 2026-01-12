@@ -66,5 +66,14 @@ console.log(createUsername("John", "Smith")); // John_smith ...calls the functio
 console.log(createUsername("John"));          // John_user... calls function with only first name, prints "ana_user"
 
 
+//Question 8. apply operation
+function applyOperation(a, b, operation) {   //declares a function taking two numbers and a callback function
+  return operation(a, b);   //executes the callback operation with a and b and returns the result
+}
 
+function add(x, y) { return x + y; }   //defines a function to add two numbers
+function multiply(x, y) { return x * y; }   //defines a function to multiply two numbers
+
+console.log(applyOperation(5, 3, add));       // calls applyOperation with add, prints 8
+console.log(applyOperation(5, 3, multiply));  // calls applyOperation with multiply, prints 15
 
