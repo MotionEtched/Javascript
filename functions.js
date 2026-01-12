@@ -86,4 +86,14 @@ function filterAdults(ages) {  //declares a function that takes an array of ages
 console.log(filterAdults([12, 17, 18, 21, 15]));   //calls the function and prints [18, 21]
 
 
+//Question 10. calculate grade
+function calculateGrade(score) {   //declares a function that takes a numeric score
+  if (score >= 90) return "A";   //returns "A" if score is 90 or above
+  else if (score >= 80) return "B";   //returns "B" if score is between 80–89
+  else if (score >= 70) return "C";   //returns "C" if score is between 70–79
+  else if (score >= 60) return "D";   //returns "D" if score is between 60–69
+  else return "F";   //returns "F" if score is below 60
+}
+
+console.log(calculateGrade(85)); // calls the function and prints "B"
 
