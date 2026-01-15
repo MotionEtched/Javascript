@@ -40,3 +40,5 @@ console.log("Value of PI:", PI);
 // 5. Favorite color
 let favoriteColor = "Black";
 console.log("My favorite color is", favoriteColor);
+
+
